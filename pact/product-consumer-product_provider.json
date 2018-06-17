@@ -1,0 +1,34 @@
+{
+  "provider": {
+    "name": "product_get_provider"
+  },
+  "consumer": {
+    "name": "product_consumer"
+  },
+  "interactions": [
+    {
+      "description": "a request for get product",
+      "request": {
+        "method": "GET",
+        "path": "/product/elbise"
+      },
+      "response": {
+        "status": 200,
+        "body": "Product found  : elbise"
+      },
+      "providerStates": [
+        {
+          "name": "product get data"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "pact-specification": {
+      "version": "3.0.0"
+    },
+    "pact-jvm": {
+      "version": "3.5.5"
+    }
+  }
+}
