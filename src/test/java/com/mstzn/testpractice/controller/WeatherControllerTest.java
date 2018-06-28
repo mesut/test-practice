@@ -17,10 +17,10 @@ import static org.mockito.Mockito.when;
 public class WeatherControllerTest {
 
     @InjectMocks
-    WeatherController weatherController;
+    private WeatherController weatherController;
 
     @Mock
-    WeatherClient weatherClient;
+    private WeatherClient weatherClient;
 
     @Test
     public void it_should_get_weather() {
